@@ -46,10 +46,3 @@ Ensure you have these tools installed:
 
 5. Run the project
    `npm run dev`
-
-### Database Management Commands
-
--   Command for resetting ID in database:
-    ```sql
-    SELECT setval(pg_get_serial_sequence('"[DATA_MODEL_NAME_HERE]"', 'id'), coalesce(max(id)+1, 1), false) FROM "[DATA_MODEL_NAME_HERE]";
-    ```
